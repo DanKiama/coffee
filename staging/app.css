@@ -1,11 +1,10 @@
 .wrapper{
- 
+  background: #865b1b;
   width:100%;
   height:100vh;
 }
 body{
-    overflow:hidden;
-    background: #865b1b;
+    overflow:hidden
 }
 .coffee-parent{
     width: 80%;
@@ -44,13 +43,7 @@ body{
 .table {
     text-align: center
 }
-.boiling::after{
-  width:30px;
-  height: 30px;
-  background: url('images/coffee-bean-color-512.png');
-  background-size: contain;
-  content: '';
-}
+
 
 
 #stars {
@@ -124,84 +117,13 @@ body{
   }
   .coffee-icons span{
       background:url('images/coffee-bean-color-512.png');
-      width: 35px;
+      width: 30px;
       height: 75px;
       position: absolute;
       z-index: 999;
       background-size: contain;
       background-repeat: no-repeat;
       opacity:0
-  }
-  .coffee-icons span.sack{
-    opacity: 1;
-    background: none;
-    font-size: 49px;
-    margin-left: -22px;
-    margin-top: 14px;
-    font-weight: bold;
-    animation:fadeInOut 0.5s;
-    opacity: 0;
-    animation-delay:26s;
-    animation-fill-mode: forwards
-  }
-  span.grinder_bottom {
-    margin: 85px -18px 0;
-    height: 66px;
-    width: 72px;
-    border-radius: 80px 80px 5px 5px;
-    opacity:1;
-    background: url(images/8.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    overflow:hidden;
-    animation:fadeIn 0.5s;
-    opacity: 0;
-    animation-delay:3s;
-    animation-fill-mode: forwards
-  }
- @keyframes fadeIn{
-   0%{opacity:0; transform: scale(1.5)}
-   100%{opacity:1; transform: scale(1)}
- }
- @keyframes fadeInOut{
-  0%{opacity:0; transform: scale(0)}
-  100%{opacity:1; transform: scale(1)}
-}
-  span.grinder_bottom:after {
-    content:'';
-   
-   
-  }
-  .finale-cup{
-    position: absolute;
-    top: 0;
-    text-align: center;
-    z-index: 999;
-    margin-top: 135px;
-    animation:cupfadeIn 1s;
-    opacity: 0;
-    animation-delay:27s;
-    animation-fill-mode: forwards
-    
-  }
-  @keyframes cupfadeIn{
-    0%{opacity:0; transform: scale(2)}
-    50%{opacity:1; transform: scale(0.5)}
-    100%{opacity:1; transform: scale(1)}
-  }
-  .jug{
-    animation:jugfadeIn 0.5s;
-    opacity: 1;
-    animation-delay:26.5s;
-    animation-fill-mode: forwards
-  }
-  @keyframes jugfadeIn{
-    0%{opacity:1; transform: scale(1)}
-    100%{opacity:0; transform: scale(0)}
-  }
-  .clock{
-    float: left;
-    margin: 0 100px;
   }
   .coffee-icons span.one{
     -webkit-animation:  coffee-one 5s ; /* Safari 4.0 - 8.0 */
@@ -370,7 +292,6 @@ body{
 
   .shake-glass {
     animation: shake2 0.5s ease 2s;
-    width: 25%;
   }
   @keyframes shake2 {
       0%, 100% {transform: translateX(0);}
@@ -401,12 +322,5 @@ body{
       opacity: 1;
       transform: translateY(0);
     }
-  }
-  footer p{
-    text-align: center;
-    padding-top:10px
-  }
-  footer img{
-    float: left;
   }
   
